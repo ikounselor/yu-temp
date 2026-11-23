@@ -14,7 +14,7 @@ const orbitItems = [
 
 export default function Hero() {
   return (
-    <section id="home" className="overflow-hidden bg-[radial-gradient(900px_500px_at_85%_20%,rgba(92,225,230,0.45),transparent_60%)] bg-bgmild py-20 sm:py-24 lg:py-28">
+    <section id="home" className="section-spacing overflow-hidden bg-[radial-gradient(900px_500px_at_85%_20%,rgba(92,225,230,0.45),transparent_60%)] bg-bgmild">
       <div className="mx-auto grid w-[92%] max-w-290 grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-8">
 
         {/* Hero content */}

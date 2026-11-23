@@ -12,7 +12,7 @@ export default function Institutions() {
   return (
     <section
       id="institutions"
-      className="bg-linear-to-br from-primary-dark to-teal py-20 text-light sm:py-24 lg:py-28"
+      className="section-spacing bg-linear-to-br from-primary-dark to-teal text-light"
     >
       <div className="mx-auto grid w-[92%] max-w-290 grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
 

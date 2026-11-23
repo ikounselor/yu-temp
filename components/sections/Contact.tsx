@@ -2,7 +2,7 @@ import ContactForm from "@/services/ContactForm";
 
 export default function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 bg-bgmild py-20 sm:py-24 lg:py-28">
+    <section id="contact" className="section-spacing scroll-mt-20 bg-bgmild">
       <div className="mx-auto grid w-[92%] max-w-290 grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
         {/* Contact Heading */}
         <div>

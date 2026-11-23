@@ -39,7 +39,7 @@ const pillars = [
 
 export default function WhyYungUnitee() {
   return (
-    <section className="bg-light py-20 sm:py-24 lg:py-28">
+    <section className="section-spacing bg-light">
       <div className="mx-auto w-[92%] max-w-290">
 
         <div className="mb-10">

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="bg-light py-20 sm:py-24 lg:py-28">
+    <section id="about" className="section-spacing bg-light">
       <div className="mx-auto grid w-[92%] max-w-290 grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
         {/* About Content */}

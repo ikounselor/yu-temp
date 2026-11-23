@@ -173,3 +173,23 @@
 .orbit-counter {
   animation: orbit-rotate var(--orbit-duration) linear infinite reverse;
 }
+
+:root {
+  --section-padding-y: 3rem;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --section-padding-y: 5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --section-padding-y: 6rem;
+  }
+}
+
+.section-spacing {
+  padding-block: var(--section-padding-y);
+}

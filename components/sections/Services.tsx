@@ -62,7 +62,7 @@ function ServiceSection({ service, index }: { service: Service; index: number })
     <section
       id={service.id}
       aria-labelledby={`${service.id}-heading`}
-      className={`py-12 sm:py-16 lg:py-20 ${
+      className={`section-spacing ${
         isDark
           ? "bg-secondary text-light"
           : isSoft ? "bg-bgmild" : "bg-light"
@@ -144,7 +144,7 @@ function ServiceSection({ service, index }: { service: Service; index: number })
 export default function Services() {
   return (
     <div id="services">
-      <div className="mx-auto w-[92%] max-w-290 pb-12 pt-20 sm:pb-16 sm:pt-28">
+      <div className="section-spacing mx-auto w-[92%] max-w-290">
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-primary-dark">
           Our Services
         </p>
