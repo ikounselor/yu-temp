@@ -1,10 +1,11 @@
 import Button from "@/components/ui/Button";
 
 const capabilities = [
-  "Education discovery",
-  "Admissions",
-  "Financing",
-  "International networks",
+  "Education Discovery & Guidance",
+  "Study Abroad & International Educations",
+  "Admissions Support",
+  "Education Financing",
+  "Global Academic Networks & Partnerships",
 ];
 
 export default function PoweredBy() {
@@ -17,13 +18,11 @@ export default function PoweredBy() {
         </p>
 
         <h2 className="hero_heading leading-tight tracking-tight">
-          Experience from the education sector.
+          Built on experience, Connected to global opportunities
         </h2>
 
         <p className="para1 mx-auto my-6 max-w-[40em] leading-relaxed text-light/80">
-          iKounselor powers YungUnitee, bringing its experience in the
-          education sector, its established international networks and
-          its work across education discovery, admissions and financing.
+YungUnitee is powered by iKounselor, bringing together over 25 years of experience in the education sector, established international networks across 18+ countries, and expertise in education discovery, study abroad, admissions and education financing. Together, we make academic opportunities, international education pathways and global learning experiences more accessible.
         </p>
 
         <ul className="mb-8 flex flex-wrap justify-center gap-2">

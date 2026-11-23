@@ -8,8 +8,8 @@ const orbitItems = [
   "Certifications",
   "eBooks",
   "Counselling",
-  "Masterclasses",
-  "Quizzes",
+  "Workshops",
+  "Adventure Training",
 ];
 
 export default function Hero() {
@@ -87,12 +87,11 @@ export default function Hero() {
           </div>
 
           {/* Fixed centre logo */}
-          <div className="relative z-30 flex h-28 w-28 items-center justify-center rounded-full bg-linear-to-br from-primary to-teal shadow-[0_20px_50px_rgba(31,197,203,0.45)]">
+          <div className="relative z-30 flex h-49 w-40 items-center justify-center rounded-full ">
             <Image
-              src="/services/yulogo.png"
+              src="/graduate-1.png"
               alt="YungUnitee"
-              width={180}
-              height={55}
+             fill
               className="h-auto w-20 object-contain"
               priority
             />

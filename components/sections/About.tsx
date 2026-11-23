@@ -20,7 +20,7 @@ export default function About() {
           </p>
 
           <p className="para1 mt-4 max-w-[32em] leading-relaxed text-muted">
-            It brings individuals, institutions and opportunity providers
+            It brings individuals, institutions and global content providers
             together in one connected ecosystem, for learners broadly aged
             16-35 and the schools, universities and organisations that
             support them.
@@ -92,7 +92,7 @@ export default function About() {
           >
             <text x="200" y="66">Individuals</text>
             <text x="80" y="294">Institutions</text>
-            <text x="320" y="288">Providers</text>
+            <text x="320" y="288"> Providers</text>
           </g>
         
           {/* Central YungUnitee Circle */}
