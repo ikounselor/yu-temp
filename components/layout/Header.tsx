@@ -11,6 +11,10 @@ const navigation = [
   { label: "For Institutions", href: "#institutions" },
 ];
 
+const WHATSAPP_NUMBER = "9201594559";
+const WHATSAPP_MESSAGE = "Hi, I would like to know more about YungUnitee and its services.";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -47,8 +51,12 @@ export default function Header() {
 
           </nav>
         
-          <Button href="#contact" variant="dark" className="px-5 py-2.5">
-            ENQUIRE NOW
+          <Button
+            href={WHATSAPP_URL}
+            variant="dark"
+            className="px-5 py-2.5"
+          >
+            CONTACT US
           </Button>
         </div>
 
@@ -85,10 +93,10 @@ export default function Header() {
           ))}
 
           <Button
-            href="#contact"
+            href={WHATSAPP_URL}
             onClick={() => setMenuOpen(false)}
           >
-            ENQUIRE NOW
+            CONTACT US
           </Button>
         </nav>
       )}

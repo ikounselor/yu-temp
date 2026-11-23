@@ -25,7 +25,7 @@ export default function Home() {
         <Institutions />
         <WhyYungUnitee />
         <PoweredBy />
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>

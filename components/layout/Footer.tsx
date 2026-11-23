@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PhoneOutgoing, MapPin, Mail } from "lucide-react";
+import { SiInstagram, SiFacebook } from "react-icons/si";
 
 const exploreLinks = [
   { label: "About YU", href: "#about" },
@@ -14,6 +16,10 @@ const serviceLinks = [
   { label: "Internships", href: "#internships" },
   { label: "Certifications", href: "#certifications" },
 ];
+
+const WHATSAPP_NUMBER = "9201594559";
+const WHATSAPP_MESSAGE = "Hi, I would like to know more about YungUnitee and its services.";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
 export default function Footer() {
   return (
@@ -86,11 +92,51 @@ export default function Footer() {
               Contact &amp; Social
             </h5>
 
-            <ul className="para2 grid gap-2 italic text-muted">
-              <li>[Email ]</li>
-              <li>[Phone ]</li>
-              <li>[Address ]</li>
-              <li>[Social links ]</li>
+            <ul className="para2 grid gap-2 text-muted">
+
+              <li className="flex items-start gap-2">
+                <Link 
+                href={WHATSAPP_URL} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
+                >
+                  <PhoneOutgoing className="mt-0.5 shrink-0" size={15} />
+                  <span>+91 9201594559</span>
+                </Link>
+                
+              </li>
+
+              <li className="flex items-start gap-2">
+                <MapPin className="mt-1 shrink-0" size={17} />
+                <span>
+                  S-3, III Floor, 16, Bittan Market, E-5, Arera Colony, Bhopal,
+                  Madhya Pradesh 462016
+                </span>
+              </li>
+
+              <li>
+                <Link
+                  href="https://www.instagram.com/ikounselor/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
+                >
+                  <SiInstagram className="mt-0.5 shrink-0" size={14}/>
+                  <span>Instagram</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.facebook.com/iKEdTech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
+                >
+                  <SiFacebook className="mt-0.5 shrink-0" size={14}/>
+                  <span>Facebook</span>
+                </Link>
+              </li>
             </ul>
           </div>
 
