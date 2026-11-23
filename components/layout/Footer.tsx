@@ -23,7 +23,7 @@ const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent
 
 export default function Footer() {
   return (
-    <footer className="bg-bgmild py-14 sm:py-16">
+    <footer className="bg-bgmild section-spacing">
       <div className="mx-auto w-[92%] max-w-290">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-8">
 
