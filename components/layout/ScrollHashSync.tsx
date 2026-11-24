@@ -1,4 +1,6 @@
+
 "use client";
+
 import { useEffect } from "react";
 
 export default function ScrollHashSync() {
@@ -13,7 +15,6 @@ export default function ScrollHashSync() {
 
     const updateHash = () => {
       const scrollPosition = window.scrollY + 150;
-
       let currentSection = sections[0];
 
       for (const section of sections) {

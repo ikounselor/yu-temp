@@ -10,7 +10,7 @@ const capabilities = [
 
 export default function PoweredBy() {
   return (
-    <section className="bg-secondary py-20 text-center text-light sm:py-24 lg:py-28">
+    <section className="section-spacing bg-secondary text-center text-light">
       <div className="mx-auto w-[92%] max-w-290">
 
         <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-primary">

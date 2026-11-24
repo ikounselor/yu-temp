@@ -136,23 +136,7 @@ export const services: Service[] = [
     background: "soft",
      comingSoon: true,
   },
-  // {
-  //   id: "counselling",
-  //   number: "07",
-  //   name: "Counselling & career Guidance",
-  //   image: "/services/counselling.jpeg",
-  //   title: "Direction shaped around your goals.",
-  //   description:
-  //     "Make more informed academic and career decisions with personalised support. Explore education pathways, weigh your options and move forward with a plan that reflects your individual goals.",
-  //   chips: [
-  //     "Academic counselling",
-  //     "Career guidance",
-  //     "Education pathway exploration",
-  //     "Personalised direction",
-  //   ],
-  //  visual: "teal",
-  //   background: "white",
-  // },
+  
   {
     id: "masterclasses",
     number: "08",

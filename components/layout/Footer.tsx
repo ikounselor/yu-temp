@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PhoneOutgoing, MapPin, Mail } from "lucide-react";
-import { SiInstagram, SiFacebook } from "react-icons/si";
+import { FaInstagram, FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const exploreLinks = [
   { label: "About YU", href: "#about" },
@@ -12,9 +12,13 @@ const exploreLinks = [
 const serviceLinks = [
   { label: "Research", href: "#research" },
   { label: "Assessments", href: "#assessments" },
-  { label: "International", href: "#international" },
-  { label: "Internships", href: "#internships" },
+  { label: "International Programs", href: "#international" },
+  { label: "Internships ", href: "#internships" },
   { label: "Certifications", href: "#certifications" },
+  { label: "Counselling", href: "#counselling" },
+  { label: "Ebooks", href: "#ebooks" },
+  { label: "Workshop", href: "#masterclasses" },
+  { label: "Ecat & Adventure", href: "#quizzes" },
 ];
 
 const WHATSAPP_NUMBER = "9201594559";
@@ -23,7 +27,7 @@ const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent
 
 export default function Footer() {
   return (
-    <footer className="bg-bgmild py-14 sm:py-16">
+    <footer className="bg-bgmild section-spacing">
       <div className="mx-auto w-[92%] max-w-290">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-8">
 
@@ -101,14 +105,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
                 >
-                  <PhoneOutgoing className="mt-0.5 shrink-0" size={15} />
+                  <PhoneOutgoing className="mt-0.5 shrink-0" size={14} />
                   <span>+91 9201594559</span>
                 </Link>
                 
               </li>
 
               <li className="flex items-start gap-2">
-                <MapPin className="mt-1 shrink-0" size={17} />
+                <MapPin className="mt-0.5 -ml-0.5 shrink-0" size={17} />
                 <span>
                   S-3, III Floor, 16, Bittan Market, E-5, Arera Colony, Bhopal,
                   Madhya Pradesh 462016
@@ -122,7 +126,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
                 >
-                  <SiInstagram className="mt-0.5 shrink-0" size={14}/>
+                  <FaInstagram className="shrink-0" size={15}/>
                   <span>Instagram</span>
                 </Link>
               </li>
@@ -133,8 +137,30 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
                 >
-                  <SiFacebook className="mt-0.5 shrink-0" size={14}/>
+                  <FaFacebook className=" shrink-0" size={15}/>
                   <span>Facebook</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/company/ikounselor-ed-tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
+                >
+                  <FaLinkedin className=" shrink-0" size={15}/>
+                  <span>Linkedin</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.youtube.com/@ikounseloredtech5027"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 transition-colors hover:text-primary-dark"
+                >
+                  <FaYoutube className=" shrink-0" size={15}/>
+                  <span>Youtube</span>
                 </Link>
               </li>
             </ul>
