@@ -146,7 +146,7 @@ export default function Services() {
   return (
     <div id="services">
       {/* Services Introduction */}
-      <section className="section-spacing bg-light">
+      <section className="mb-10 bg-light">
         <div className="mx-auto w-[92%] max-w-290">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-primary-dark">
             Our Services
