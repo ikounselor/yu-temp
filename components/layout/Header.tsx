@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import { FaWhatsapp } from "react-icons/fa";
 
 const navigation = [
   { label: "Home", href: "#home" },
@@ -56,7 +57,10 @@ export default function Header() {
             variant="dark"
             className="px-5 py-2.5"
           >
-            CONTACT US
+            <span className="flex items-center gap-2">
+              <FaWhatsapp size={18} />
+              CONTACT US
+            </span>
           </Button>
         </div>
 

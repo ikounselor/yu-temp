@@ -1,10 +1,11 @@
+/// <reference lib="dom" />
 "use client";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import { services, type Service } from "@/data/services";
 
 
-const visualStyles:any = {
+const visualStyles: Record<Service["visual"], string> = {
   cyan: "bg-gradient-to-br from-cyan to-teal",
   white: "border border-primary-200 bg-gradient-to-br from-light to-primary",
   teal: "bg-gradient-to-br from-teal to-primary-dark",
@@ -144,21 +145,25 @@ function ServiceSection({ service, index }: { service: Service; index: number })
 export default function Services() {
   return (
     <div id="services">
-      <div className="section-spacing mx-auto w-[92%] max-w-290">
-        <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-primary-dark">
-          Our Services
-        </p>
+      {/* Services Introduction */}
+      <section className="section-spacing bg-light">
+        <div className="mx-auto w-[92%] max-w-290">
+          <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-primary-dark">
+            Our Services
+          </p>
 
-        <h2 className="hero_heading max-w-3xl leading-tight tracking-tight">
-          Nine ways to explore, learn and move forward.
-        </h2>
+          <h2 className="hero_heading max-w-3xl leading-tight tracking-tight">
+            Nine ways to explore, learn and move forward.
+          </h2>
 
-        <p className="para1 mt-5 max-w-[36em] leading-relaxed text-muted">
-          Some services are open for enquiries today; others are being
-          prepared. Tell us what interests you and we’ll guide you from there.
-        </p>
-      </div>
+          <p className="para1 mt-5 max-w-[36em] leading-relaxed text-muted">
+            Some services are open for enquiries today; others are being
+            prepared. Tell us what interests you and we’ll guide you from there.
+          </p>
+        </div>
+      </section>
 
+      {/* Individual Service Sections */}
       {services.map((service, index) => (
         <ServiceSection
           key={service.id}

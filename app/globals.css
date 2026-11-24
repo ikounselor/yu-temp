@@ -175,21 +175,48 @@
 }
 
 :root {
-  --section-padding-y: 3rem;
+  --section-padding-y: 48px;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   :root {
-    --section-padding-y: 5rem;
+    --section-padding-y: 80px;
   }
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 1024px) {
   :root {
-    --section-padding-y: 6rem;
+    --section-padding-y: 80px;
   }
 }
 
 .section-spacing {
   padding-block: var(--section-padding-y);
+}
+
+
+
+main section[data-scroll-reveal] > div {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+
+  transition:
+    opacity 750ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 750ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+main section[data-scroll-revealed] > div {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  main section[data-scroll-reveal] > div,
+  main section[data-scroll-revealed] > div {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
