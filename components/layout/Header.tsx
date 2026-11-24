@@ -52,16 +52,16 @@ export default function Header() {
 
           </nav>
         
-          <Button
+          <Link
             href={WHATSAPP_URL}
-            variant="dark"
-            className="px-5 py-2.5"
+            target="_blank"
+            className="px-5 py-2.5 bg-secondary text-md text-white rounded-full"
           >
             <span className="flex items-center gap-2">
               <FaWhatsapp size={18} />
               CONTACT US
             </span>
-          </Button>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -96,12 +96,15 @@ export default function Header() {
             </Link>
           ))}
 
-          <Button
+         <Link
             href={WHATSAPP_URL}
+            target="_blank"
+            className="px-5 py-2.5 bg-secondary text-sm text-white rounded-full"
+          
             onClick={() => setMenuOpen(false)}
           >
             CONTACT US
-          </Button>
+          </Link>
         </nav>
       )}
     </header>
