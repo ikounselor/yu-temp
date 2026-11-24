@@ -12,7 +12,7 @@ const navigation = [
   { label: "For Institutions", href: "#institutions" },
 ];
 
-const WHATSAPP_NUMBER = "9201594559";
+const WHATSAPP_NUMBER = "919201594559";
 const WHATSAPP_MESSAGE = "Hi, I would like to know more about YungUnitee and its services.";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
