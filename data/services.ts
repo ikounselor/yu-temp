@@ -79,8 +79,8 @@ export const services: Service[] = [
       "Artificial Intelligence",
       "Data Analytics",
     ],
-    visual: "amber",
-    background: "white",
+    visual: "cyan",
+    background: "soft",
   },
   {
     id: "certifications",
@@ -96,8 +96,8 @@ export const services: Service[] = [
       "Industry-relevant knowledge",
       "Flexible learning",
     ],
-    visual: "cyan",
-    background: "soft",
+     visual: "white",
+    background: "white",
     comingSoon: true,
   },
    {
@@ -114,8 +114,8 @@ export const services: Service[] = [
       "Education pathway exploration",
       "Personalised direction",
     ],
-    visual: "teal",
-    background: "white",
+   visual: "teal",
+    background: "dark",
   },
   {
     id: "ebooks",
@@ -167,8 +167,8 @@ export const services: Service[] = [
       "Hands-on Workshops",
       "Creative Exploration",
     ],
-    visual: "amber",
-    background: "dark",
+    visual: "white",
+    background: "white",
   },
   {
     id: "quizzes",
@@ -184,7 +184,7 @@ export const services: Service[] = [
   "Leadership development",
   "Problem-solving skills",
     ],
-    visual: "cyan",
-    background: "soft",
+   visual: "teal",
+    background: "dark",
   },
 ];
