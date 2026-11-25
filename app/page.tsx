@@ -24,8 +24,8 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
-        <Institutions />
         <WhyYungUnitee />
+        <Institutions />
         <PoweredBy />
         {/* <Contact /> */}
       </main>
