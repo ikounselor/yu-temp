@@ -31,7 +31,7 @@ export default function Institutions() {
           </p>
 
           <div className="mt-8">
-            <Button href="#contact" variant="amber">
+            <Button href="https://app.yungunitee.com/f2/lp-adventure-copy-64u4y" variant="amber" target="_blank">
               PARTNER WITH US
             </Button>
           </div>

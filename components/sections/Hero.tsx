@@ -48,9 +48,9 @@ export default function Hero() {
               EXPLORE OUR SERVICES
             </Button>
 
-            <Button href="#contact" variant="outline">
+            {/* <Button href="#contact" variant="outline">
               ENQUIRE NOW
-            </Button>
+            </Button> */}
           </div>
         </div>
 

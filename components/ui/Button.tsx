@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 interface ButtonProps {
   children: ReactNode;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget;
   variant?: "dark" | "outline" | "amber" | "primary";
   onClick?: () => void;
   type?: "button" | "submit";
@@ -21,6 +22,7 @@ const variants = {
 export default function Button({
   children,
   href,
+  target,
   variant = "dark",
   onClick,
   type = "button",
@@ -32,6 +34,8 @@ export default function Button({
     return (
       <Link
         href={href}
+        target={target}
+        rel={target === "_blank" ? "noopener noreferrer" : undefined}
         onClick={onClick}
         className={classes}
       >

@@ -96,41 +96,13 @@ function ServiceSection({ service, index }: { service: Service; index: number })
             {service.description}
           </p>
 
-          {service.comingSoon ? (
-            <Button
-              variant="amber"
-              onClick={() =>
-                window.dispatchEvent(new Event("open-notify-modal"))
-              }
-            >
-              NOTIFY ME
-            </Button>
-          ) : (
- 
-            <Button
-              href="#contact"
-              onClick={() => {
-                // Update the selected interest
-                window.dispatchEvent(
-                  new CustomEvent("select-interest", {
-                    detail:
-                      service.id === "international"
-                        ? "International Programs"
-                        : service.name,
-                  })
-                );
-            
-                // Explicitly scroll to Contact every time
-                document.getElementById("contact")?.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              }}
-            >
-              ENQUIRE NOW
-            </Button>
-
-          )}
+          <Button
+            href={service.href}
+            target="_blank"
+            variant={service.comingSoon ? "amber" : "dark"}
+          >
+            {service.comingSoon ? "NOTIFY ME" : "ENQUIRE NOW"}
+          </Button>
         </div>
 
         {/* Visual */}
