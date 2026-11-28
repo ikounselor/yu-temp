@@ -3,7 +3,7 @@ import Image from "next/image";
 const orbitItems = [
   "Research",
   "Assessments",
-  "International",
+  "USMLE",
   "Internships",
   "Certifications",
   "eBooks",

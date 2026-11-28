@@ -6,7 +6,7 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 const exploreLinks = [
   { label: "About YU", href: "#about" },
   { label: "For Institutions", href: "#institutions" },
-  { label: "Contact", href: "#contact" },
+  // { label: "Contact", href: "#contact" },
 ];
 
 const serviceLinks = [

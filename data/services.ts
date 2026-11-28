@@ -181,4 +181,23 @@ export const services: Service[] = [
    visual: "teal",
     background: "dark",
   },
+   {
+    id: "USMLE",
+    number: "10",
+    name: "USMLE GUIDANCE",
+    title: "Where your medical journey moves forward",
+    image: "/services/usmle.jpeg",
+    href: "https://app.yungunitee.com/f2/lp-workshop-copy-pfog9",
+    description:
+      "Navigate your USMLE journey with structured guidance across Step 1, Step 2 CK, residency planning, US clinical rotations, research opportunities, and ERAS & Match support. Access expert mentorship and guidance to help you progress towards your medical career goals.",
+    chips: [
+ 
+  "Exam preparation guidance",
+  "Personalised mentorship",
+  "Clinical rotation assistance",
+  "Residency application support",
+    ],
+  visual: "cyan",
+    background: "soft",
+  },
 ];
